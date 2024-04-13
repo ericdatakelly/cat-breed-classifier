@@ -5,7 +5,7 @@
 The notebook outputs up to three potential breed mixes because many cat pictures are not of full breeds.
 
 ## Installation
-Install and activate the virtual environment with either Mamaba or Conda using the environment file.
+Install and activate the virtual environment with either Mamba or Conda using the environment file.
 ```bash
 cd cat-breed-classifier
 mamba env create -f environment.yaml
@@ -18,7 +18,7 @@ Get a free API key from [thecatapi.com](https://thecatapi.com/) and put it in yo
 Run the notebook.
 
 ### Retraining
-Get [Cats and Dogs Breeds Classification Oxford Dataset](https://www.kaggle.com/datasets/zippyz/cats-and-dogs-breeds-classification-oxford-dataset) and put the annotation and image folders into the data folder of this project. E.g., `data/cat_dog_breeds_oxford/annotations/trainval.txt`
+Get [Cats and Dogs Breeds Classification Oxford Dataset](https://www.kaggle.com/datasets/zippyz/cats-and-dogs-breeds-classification-oxford-dataset) and put the annotation and image folders into the data folder of this project, e.g., `data/cat_dog_breeds_oxford/annotations/trainval.txt`
 
 Run the `cat_breed_train.py` script. It will save a loss plot and a new model in the same directory.
 
