@@ -13,12 +13,12 @@ mamba env create -f environment.yaml
 mamba activate cat-breed-classifier
 ```
 
-### Classification
+## Classification
 Get a free API key from [thecatapi.com](https://thecatapi.com/) and put it in your user folder (`~/.config/catapi/api_key.txt`).
 
 Run the notebook.
 
-### Retraining
+## Retraining
 Get [Cats and Dogs Breeds Classification Oxford Dataset](https://www.kaggle.com/datasets/zippyz/cats-and-dogs-breeds-classification-oxford-dataset) and put the annotation and image folders into the data folder of this project, e.g., `data/cat_dog_breeds_oxford/annotations/trainval.txt`
 
 Run the `cat_breed_train.py` script. It will save a loss plot and a new model in the same directory.
