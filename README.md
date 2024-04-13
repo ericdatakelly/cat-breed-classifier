@@ -1,9 +1,25 @@
-1. Copy these files into a new project folder.  Exclude `.git`.  (or use this as a repo template in GitHub)
-2. Update all files for the new project (project name, version, dependencies, etc.)
-3. Create virtual environment (`mamba env create -f environment.yaml`) and activate
-4. Install via `flit install -s`
-5. In VS Code
-  - Initialize repo
-  - Select Python interpreter (might also need to be in settings.json)
-  - If tests are present, discover tests using Test Explorer (tab) and run tests
-6. Try debugging a file using VS Code debugger.  Click the button to make a launch file and accept defaults.  This will reduce clicking and will provide a place for options when needed.  Note that python interpreter should be shown by the full path in the terminal (it's not necessarily activated).
+# Cat Breed Classifier
+
+**Notebook and script to train on the Oxford *Cats and Dogs Breeds Classification* dataset and predict cat breeds from thecatapi.com**
+
+The notebook outputs up to three potential breed mixes because many cat pictures are not of full breeds.
+
+## Installation
+Install and activate the virtual environment with either Mamaba or Conda using the environment file.
+```bash
+cd cat-breed-classifier
+mamba env create -f environment.yaml
+mamba activate cat-breed-classifier
+```
+
+### Classification
+Get a free API key from [thecatapi.com](https://thecatapi.com/) and put it in your user folder (`~/.config/catapi/api_key.txt`).
+
+Run the notebook.
+
+### Retraining
+Get [Cats and Dogs Breeds Classification Oxford Dataset](https://www.kaggle.com/datasets/zippyz/cats-and-dogs-breeds-classification-oxford-dataset) and put the annotation and image folders into the data folder of this project. E.g., `data/cat_dog_breeds_oxford/annotations/trainval.txt`
+
+Run the `cat_breed_train.py` script. It will save a loss plot and a new model in the same directory.
+
+View results of the new model by updating the model name in the notebook and running all cells.
