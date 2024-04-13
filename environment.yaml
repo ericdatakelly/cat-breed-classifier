@@ -2,13 +2,12 @@ name: cat-breed-classifier
 channels:
   - conda-forge
 dependencies:
+  - ipykernel
   - matplotlib
   - mlflow
   - numpy
   - pandas
   - pillow
   - pytorch
-  - pytorch-ignite
-  - pyyaml
-  - tensorboard
+  - requests
   - torchvision
