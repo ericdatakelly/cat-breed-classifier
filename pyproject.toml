@@ -1,0 +1,18 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "py-ds-template1"
+version = "2024.2.28"
+description = "A template for creating Python Data Science projects"
+
+[tool.pytest.ini_options]
+minversion = "6.0"  # Specify the minimum pytest version
+addopts = "-ra -q"  # Default options: -rA for detailed summary, -q for less verbose output
+testpaths = [
+    "tests",
+]
+
+[tool.flit.module]
+name = "py_ds_template1"

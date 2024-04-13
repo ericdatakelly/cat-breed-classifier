@@ -1,0 +1,12 @@
+name: py-ds-template1
+channels:
+  - conda-forge
+# Either install pre-commit outside this environment or add it here, not both
+dependencies:
+  - black
+  - flit
+  - geopy
+  - isort
+  - pre-commit
+  - pytest
+  - python>=3.10
