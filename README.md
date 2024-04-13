@@ -7,6 +7,7 @@ The notebook outputs up to three potential breed mixes because many cat pictures
 ## Installation
 Install and activate the virtual environment with either Mamba or Conda using the environment file.
 ```bash
+git clone git@github.com:ericdatakelly/cat-breed-classifier.git
 cd cat-breed-classifier
 mamba env create -f environment.yaml
 mamba activate cat-breed-classifier
